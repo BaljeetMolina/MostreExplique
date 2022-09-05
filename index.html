@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+    </style>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+*::selection{
+    background-color: #333;
+    color: #ccc;
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+html{
+ background-color: #536c51;   
+}
+.corpo{
+    margin-left: 10%;
+    margin-top: 50px;
+    width: 50%;
+    height: 350px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 10px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.82);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+overflow-y: scroll;
+
+}
+::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+.apresentacoes{
+    margin-left: 1%;
+    margin-top: 50px;
+    background-color: #33333359;
+    max-height: 600px;
+    max-width: 250px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.82);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+
+}
+.topbar{
+    display: flex;
+    flex: row;
+    justify-content:flex-start;
+    align-items:center;
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-bottom: 20px;
+    font-size: x-large;
+    height: 100px;
+    max-width: 120%;
+    min-width: 75%;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 100px 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.bodi{
+display: flex;
+flex-direction: row;
+max-height: 100%;
+max-width: 90%;
+margin-left: 2%;
+padding-right: 2%;
+}
+.buttonsLang{
+    margin-left: 30%;
+    position: relative;
+}
+.bt{
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 5px;
+    max-width: 200px;
+}
+.bt:hover, .bt:focus{
+    border-radius: 5px;
+    color: #333;
+    border: 2px solid #333;
+    background-color: #fff;
+    padding: 5px;
+}
+.video{
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: small;
+}
+.corpos{
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.textos{
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.txtPort{
+    background: rgba(255, 255, 255, 0.82);
+    padding: 25px;
+    width: 750px;
+    height: 550px;
+    overflow-y: scroll;
+    margin-top: 50px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+.b{
+    font-size: xx-large;
+}
+#ingtxt,#porttxt{
+    display: none;
+}
+.btlangs{
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 200px;
+}
+    </style>
+    <title>Artigo</title>
+    <nav class="topbar">
+        <h1 style="margin-right: 75px;">1°A</h1>
+        <h2>Mostra Científica</h2>
+        <div class="btlangs">
+        <button class="bt pt" id="pt" onclick="port()">Português</button>
+        <button class="bt ing" id="ing" onclick="ing()">Inglês</button>
+    </div>
+    </nav>
+</head>
+
+<body>
+    <div class="bodi">
+        <div class="apresentacoes">
+            <h1>Integrantes:</h1><br>
+            <h2 class="nome">Ana Luiza Cypriano Ferraz</h2><br>
+            <h2 class="nome">Giordanna Cativelli</h2><br>
+            <h2 class="nome">Gustavo Barbosa Molina</h2><br>
+            <h2 class="nome">Isabela Lenharo Vergilio</h2><br>
+            <h2 class="nome">Letícia Oliveira Thomé</h2><br>
+            <h2 class="nome">Matheus Campelo Senedese</h2><br>
+        </div>
+        <div class="textos">
+            <p class="txtPort" id="porttxt"><b class="b">Hepatite e Tuberculose </b><br><br>  As hepatites são uma infecção que atinge o fígado, causando alterações. Existem diferentes tipos de hepatite, a hepatite A, infecciosa, é transmitida sexualmente e pelo consumo de água e alimentos contaminados; a hepatite B, é transmitida de pessoa para pessoa por meio do sêmen e da saliva e uso de objetos não esterilizados; e a hepatite C, é transmitido da mesma forma que a hepatite B; Neste ano a OMS identificou um novo surto de hepatite em abril, onde foram registrados 430 casos, em que 6 destes levaram a óbito, hoje já ocorreram 920 casos de hepatite, a doença teve início desconhecido em crianças, levando o Brasil de volta ao mapa de casos de hepatite. Os sintomas encontrados são a febre; dor abdominal; enjoo; vômitos; perda de apetite; e pele e olhos amarelados. O tratamento é feito com repouso, boa alimentação, hidratação e o uso de medicamentos.
+                A tuberculose é uma doença bacteriana que afeta o pulmão, ela tem três tipos, a tuberculose miliar; a tuberculose ganglionar; e a tuberculose pulmonar. 
+              A tuberculose é transmitida de pessoa para pessoa, pela bactéria bacilos de Koch, que fica no ar. Essa bactéria passa de pessoa para pessoa pela tosse, fala ou espirro de pessoas já infectadas em que a doença está ativa.O principal sintoma é a tosse e febre, e o tratamento é longo e com antibióticos
+              Em 2019 10 milhões de pessoas contraíram e infelizmente 1,2 milhão faleceram, já no ano de 2020 foram relatados cerca de 69.000 casos de tuberculose e 4.500 destes levaram a óbito, estas mortes causadas por esta doença pulmonar estão crescendo cada vez mais (2019-2022), já hoje em dia 85% dos casos conseguem ser tratados com sucesso. 
+              
+              A hepatite é uma infecção que afecta o fígado. Existem diferentes tipos de hepatite, a hepatite A, infecciosa, é sexualmente transmitida e através do consumo de água e alimentos contaminados; a hepatite B, é transmitida de pessoa para pessoa através do sémen e saliva e do uso de objectos não estéreis; a hepatite C é transmitida da mesma forma que a hepatite B; Este ano a OMS identificou um novo surto de hepatite em Abril, onde foram registados 430 casos, dos quais 6 levaram à morte, hoje já se registaram 920 casos de hepatite, a doença teve um início desconhecido em crianças, levando o Brasil de volta ao mapa de casos de hepatite. Os sintomas encontrados são febre; dores abdominais; enjoos de movimento; vómitos; perda de apetite; e pele e olhos amarelos. O tratamento é feito com repouso, boa nutrição, hidratação e o uso de medicamentos.
+              A tuberculose é uma doença bacteriana que afecta o pulmão, tem três tipos, tuberculose miliar; tuberculose linfonodal; e tuberculose pulmonar.
+              A tuberculose é transmitida de pessoa a pessoa pelos bacilos da bactéria Koch, que se encontra no ar. Esta bactéria passa de pessoa a pessoa através da tosse, fala ou espirros de pessoas já infectadas em que a doença está activa. O principal sintoma é a tosse e a febre, e o tratamento é longo e com antibióticos. Em 2019, 10 milhões de pessoas contraíram-na e infelizmente 1,2 milhões morreram, em 2020 foram registados cerca de 69.000 casos de tuberculose e 4.500 destes levaram à morte, estas mortes causadas por esta doença pulmonar estão a crescer cada vez mais (2019- 2022), hoje 85% dos casos podem ser tratados com sucesso.
+              Nos últimos dois anos os casos de hepatite e tuberculose aumentaram levando a um significante número de mortes, preocupando as autoridades. Os casos de hepatite, vêm aumentando, principalmente, em crianças e os de tuberculose voltaram a crescer depois de uma década, devido a Covid-19, segundo a OMS. Dependendo do tipo de hepatite e da severidade do caso, o paciente pode ficar internado ao fazer o tratamento. Já na tuberculose, 97% dos enfermos necessitam ser internados. 
+              
+              O método de pesquisa utilizado, foi uma rigorosa seleção de sites do governo, do Ministério da Saúde, sites de universidades e portais de notícias. Foi tomado muito cuidado para que as informações fossem totalmente verdadeiras.
+              
+              A hepatite  é uma infecção que atinge o fígado e causa alterações leves, moderadas ou graves, e às vezes não apresentam sintomas. Existem diferentes tipos de hepatite. A hepatite A, infecciosa, é uma doença transmissível,  causada pelo vírus HAV, que normalmente não apresenta sintomas na fase inicial. A pessoa que já teve esse vírus, não terá uma nova infecção já que adquire imunidade, e ela pode ser fatal em menos de 1% dos casos. A hepatite B, soro-homóloga, é uma doença infecciosa e transmissível causada pelo vírus (HBV). Como o HBV está presente no sangue, no esperma e no leite materno, a hepatite B é considerada uma doença sexualmente transmissível que não possui sintomas na fase inicial, porém quando evolui para as formas crônicas pode levar a cirrose, o câncer de fígado, transplante e óbito. A hepatite C, é uma doença transmissível causada pelo vírus HCV, que também não possui sintomas na fase inicial, porém quando evolui pode levar à complicações. 
+              
+              A transmissão da hepatite se dá de formas diferentes. A hepatite A, transmitida pelo vírus da hepatite A, pode ser transmitida sexualmente, mas também pelo consumo de água e de alimentos contaminados pelo vŕus. A hepatite B é causada pelo vírus da hepatite B, e é transmitido de pessoa para pessoa por meio do sêmen e da saliva contaminados. Também pode ser transmitida por meio do uso de objetos não esterilizados, como alicates e lâminas de barbear. A hepatite C, causada pelo vírus da hepatite C, é transmitida da mesma forma que o vírus da hepatite B, por meio de fluidos corporais contaminados e objetos íntimos não esterilizados. 
+              
+              Neste ano, 2022, a OMS identificou um novo surto de hepatite em abril, e um mês depois já haviam sido registrados 430 casos, sendo que 6 destes levaram a óbito. Hoje já ocorreram 920 casos de hepatite aguda que teve início desconhecido em crianças. Após isso, o Brasil voltou ao mapa de possíveis casos de hepatite, onde cerca de 70 casos já estão sendo investigados. Não só no Brasil, a hepatite está atingindo crianças em mais de 20 países, em todos estes casos a doença vem se manifestando de uma forma muito severa e em cerca de 10% dos casos foi necessário um transplante de fígado. A doença vem atingindo  principalmente bebês de 1 mês a  adolescentes de 16 anos de idade, o que vem preocupando muito as autoridades. Apesar da quantidade de casos, o tratamento não é muito complexo e a quantidade de casos tratados é muito grande.  
+              
+              A transmissão da hepatite é muito perigosa e fácil de ocorrer, sendo as principais formas de transmissão: relações sexuais sem proteção, transmissão da mãe para o filho durante a gestação e o parto ou o uso de drogas feitas com auxílio de materiais compartilhados 
+              
+              Pessoas com hepatite apresentam febre; fraqueza; mal-estar; dor abdominal; enjoo/náuseas; vômitos; perda de apetite; urina escura (cor de café); pele e olhos amarelados; fezes amareladas, cinzentas e esbranquiçadas; barriga inchada; dor nas articulações e perda de apetite. Além de observar os sintomas, é possível identificar se o indivíduo possui o vírus fazendo exames de sangue. A sorologia pode detectar e diferenciar os tipos da doença. Além dela, exames que determinam o funcionamento do fígado, tais como as transaminases AST e ALT, são muito indicados.
+              E para o tratamento é recomendado apenas o repouso, boa alimentação e hidratação. No entanto, em alguns casos poderá ser prescrito o uso de medicamentos.
+              
+              
+              Já a doença tuberculose é uma doença bacteriana, causada pela bactéria Mycobacterium tuberculosis, podendo também ser chamada de bacilo de Koch. Os vírus podem agir de maneira silenciosa por anos, sem manifestar nenhum sintoma. Ela afeta principalmente o pulmão, mas pode atingir outros órgãos do corpo humano, de acordo com sua gravidade. A tuberculose tem três tipos. A tuberculose miliar, que é quando a doença não é contida, agravando o caso, e podendo afetar outros órgãos como a pele, e o fígado. A tuberculose ganglionar, que acontece quando a mesma bactéria que causa a tuberculose afeta o sistema linfático, atingindo os gânglios. E a tuberculose pulmonar que é outro nome dado à doença que conhecemos tradicionalmente como tuberculose. 
+              
+              O principal sintoma da tuberculose pulmonar é a tosse na forma seca ou produtiva. Por isso, recomenda-se que todo sintomático respiratório, por três semanas ou mais, seja investigado para tuberculose. Há outros sinais e sintomas que podem estar presentes, como: Febre vespertina.
+              
+              A tuberculose é transmitida de forma direta, ou seja, de pessoa para pessoa, pela bactéria bacilos de Koch, que fica no ar. Ela pode permanecer no ar em ambientes pouco ventilados por até 8 horas. Essa bactéria se instala a partir da inalação de aerossóis que decorrem, durante a fala, espirro ou tosse das pessoas com tuberculose ativa (pulmonar ou laríngea), que lançam no ar partículas contendo bacilos, que são inalados por outras pessoas que, assim contagiarão a doença. Alcoolismo, tabagismo, falta de higiene ou outros fatores que geram uma baixa imunidade e resistência, podem levar a uma maior chance de infecção.
+              
+              O tratamento nem sempre é necessário para pacientes assintomáticos. Os pacientes com sintomas manifestos precisam de um longo tratamento com vários antibióticos.
+              Em alguns casos muito graves, o paciente precisa manter distância de pessoas muito jovens e idosas ou pessoas com algum tipo de doença.
+              
+              
+              Essa é uma doença muito recorrente no mundo hoje em dia, onde no ano de 2020 foram relatados cerca de 69.000 casos e 4.500 destes levaram a óbito. As mortes causadas por esta doença pulmonar estão crescendo cada vez mais atualmente (2020-2022), considerando que em 2019 ocorreu um pico de contaminações desta, sendo que 10 milhões de pessoas contraíram e infelizmente 1,2 milhão faleceram. Porém hoje em dia esta doença pode ser tratada de forma melhor, onde 85% dos casos conseguem ser tratados com sucesso. A tuberculose também tem um tratamento e um diagnóstico prévio, porém ela continua matando pessoas em todo mundo, principalmente aquelas com más condições de moradia, desnutridas, em situação de pobreza e com HIV. No tratamento, em quase 100% dos casos ocorre a internação. 
+              
+              Grande parte da população acha que essas duas doenças não podem mais ser contagiadas e não tomam os devidos cuidados. Foi possível concluir o contrário, tendo em vista os diversos casos e surtos que já ocorreram. Para evitar a repetição desses cenários, deve-se não compartilhar objetos pessoais, fazer uso de objetos, como lâminas, somente esterilizados, usar proteção nas relações sexuais e evitar a grande quantidade de álcool, principalmente pessoas que já têm problemas hepáticos. 
+              
+              </p>
+              <p class="txtPort" id="ingtxt"><b class="b">Hepatitis and Tuberculosis</b><br><br>    Hepatitis is an infection that affects the liver, causing changes. There are different types of hepatitis, hepatitis A, which is infectious, is transmitted sexually and through the consumption of contaminated water and food; hepatitis B, which is transmitted from person to person through semen and saliva and the use of non-sterile objects; and hepatitis C, which is transmitted in the same way as hepatitis B; This year the WHO identified a new outbreak of hepatitis in April, where 430 cases were reported, 6 of which led to death; today there have already been 920 cases of hepatitis, the disease had an unknown onset in children, taking Brazil back to the map of hepatitis cases. The symptoms found are fever; abdominal pain; nausea; vomiting; loss of appetite; and yellowish skin and eyes. Treatment is done with rest, good diet, hydration, and the use of medication.
+                Tuberculosis is a bacterial disease that affects the lung; it has three types, miliary tuberculosis, ganglionar tuberculosis, and pulmonary tuberculosis. 
+              Tuberculosis is transmitted from person to person by Koch's bacillus bacteria, which are found in the air. This bacteria is passed from person to person by coughing, talking, or sneezing from already infected people in whom the disease is active.The main symptom is cough and fever, and treatment is long and with antibiotics
+              In 2019 10 million people contracted it and unfortunately 1.2 million died, already in the year 2020 about 69,000 cases of tuberculosis were reported and 4,500 of these led to death.These deaths caused by this lung disease are growing more and more (2019-2022).Already today 85% of cases can be successfully treated. 
+              
+              Hepatitis is an infection that affects the liver. There are different types of hepatitis, hepatitis A, infectious, is transmitted sexually and through consumption of contaminated water and food; hepatitis B, is transmitted from person to person through semen and saliva and the use of non-sterile objects; hepatitis C is transmitted in the same way as hepatitis B; This year WHO identified a new outbreak of hepatitis in April, where 430 cases were reported, 6 of which led to death, today 920 cases of hepatitis have been reported, the disease had an unknown onset in children, taking Brazil back to the hepatitis case map. The symptoms found are fever; abdominal pain; motion sickness; vomiting; loss of appetite; and yellow skin and eyes. Treatment is done with rest, good nutrition, hydration, and the use of medications.
+              Tuberculosis is a bacterial disease that affects the lung, it has three types, miliary tuberculosis; lymph node tuberculosis; and pulmonary tuberculosis.
+              Tuberculosis is transmitted from person to person by the bacilli of the Koch bacterium, which is found in the air. This bacterium passes from person to person through coughing, speaking or sneezing of already infected people in whom the disease is active. The main symptom is cough and fever, and treatment is long and with antibiotics. In 2019, 10 million people contracted it and unfortunately 1.2 million died, in 2020 about 69,000 cases of TB were recorded and 4,500 of these led to death, these deaths caused by this lung disease are growing more and more (2019- 2022), today 85% of cases can be successfully treated.
+              In the last two years, cases of hepatitis and tuberculosis have increased, leading to a significant number of deaths, worrying the authorities. Hepatitis cases have been increasing, especially in children, and tuberculosis cases have increased again after a decade due to Covid-19, according to the WHO. Depending on the type of hepatitis and the severity of the case, the patient may be hospitalized while undergoing treatment. In tuberculosis, 97% of the patients need to be hospitalized. 
+              
+              The research method used was a rigorous selection of government sites, the Ministry of Health, university sites, and news portals. Great care was taken to ensure that the information was completely true.
+              
+              Hepatitis is an infection that affects the liver and causes mild, moderate or severe changes, sometimes without symptoms. There are different types of hepatitis. Infectious hepatitis A is a communicable disease, caused by the HAV virus, which usually has no symptoms in its early stages. A person who has already had this virus will not be infected again since he acquires immunity, and it can be fatal in less than 1% of cases. Hepatitis B, sero-homologue, is an infectious and transmissible disease caused by the virus (HBV). Since HBV is present in blood, sperm, and breast milk, hepatitis B is considered a sexually transmitted disease that has no symptoms in its initial phase, but when it progresses to chronic forms it can lead to cirrhosis, liver cancer, transplantation, and death. Hepatitis C is a communicable disease caused by the HCV virus, which also has no symptoms in its initial phase, but when it evolves it can lead Hepatitis is transmitted in different ways. Hepatitis A, which is transmitted by the hepatitis A virus, can be transmitted sexually, but also by consuming water and food contaminated by vŕus. Hepatitis B is caused by the hepatitis B virus, and is transmitted from person to person through contaminated semen and saliva. It can also be transmitted through the use of unsterilized objects, such as pliers and razors. Hepatitis C, caused by the hepatitis C virus, is transmitted in the same way as the hepatitis B virus, through contaminated body fluids and unsterile intimate objects. 
+
+              This year, 2022, the WHO identified a new hepatitis outbreak in April, and one month later 430 cases had already been reported, 6 of which led to death. Today there have already been 920 cases of acute hepatitis that had unknown onset in children. After this, Brazil is back on the map of possible cases of hepatitis, where about 70 cases are already being investigated. Not only in Brazil, hepatitis is affecting children in more than 20 countries; in all these cases the disease is manifesting itself in a very severe way, and in about 10% of the cases a liver transplant was necessary. The disease has been affecting mainly babies from 1 month to 16 year old adolescents, which has worried the authorities a lot. Despite the quantity of cases, the treatment is not very complex.  
+              
+              The transmission of hepatitis is very dangerous and easy to occur, and the main forms of transmission are: unprotected sexual intercourse, transmission from mother to child during pregnancy and childbirth, or drug use with the aid of shared materials 
+              
+              People with hepatitis have fever; weakness; malaise; abdominal pain; nausea; vomiting; loss of appetite; dark urine (coffee-colored); yellowish skin and eyes; yellowish, gray, and whitish stools; swollen belly; joint pain; and loss of appetite. Besides observing the symptoms, it is possible to identify whether the individual has the virus by taking blood tests. Serology can detect and differentiate the types of the disease. Besides this, tests that determine the functioning of the liver, such as AST and ALT transaminases, are very indicated.
+              And for the treatment, only rest, good diet, and hydration are recommended. However, in some cases the use of medication may be prescribed.
+              
+              
+              Tuberculosis, on the other hand, is a bacterial disease, caused by the bacteria Mycobacterium tuberculosis, which can also be called Koch's bacillus. The virus can act silently for years, without manifesting any symptoms. It affects mainly the lungs, but can affect other organs of the human body, according to its severity. Tuberculosis has three types. Miliary TB, when the disease is not contained, aggravating the case, and can affect other organs, such as the skin and the liver. Ganglionar tuberculosis, which occurs when the same bacteria that causes tuberculosis affects the lymphatic system, reaching the ganglia. And pulmonary tuberculosis, which is another name given to the disease we traditionally know as TB. 
+              
+              The main symptom of pulmonary tuberculosis is cough in dry or productive form. Therefore, it is recommended that every respiratory symptomatic for three weeks or more be investigated for TB. There are other signs and symptoms that can be present, such as: Evening fever.
+              
+              Tuberculosis is transmitted directly, that is, from person to person, by Koch's bacillus bacteria, which remain in the air. It can remain in the air in poorly ventilated environments for up to 8 hours. This bacterium is installed through the inhalation of aerosols when people with active TB (pulmonary or laryngeal) speak, sneeze or cough, and release particles containing bacilli into the air. Alcoholism, smoking, poor hygiene, or other factors that generate low immunity and resistance, can lead to a greater chance of infection.
+              
+              Treatment is not always necessary for asymptomatic patients. Patients with overt symptoms need a long treatment with several antibiotics.
+              In some very severe cases, the patient needs to keep away from very young and old people or people with some kind of illness.
+              
+              
+              This is a very recurring disease in the world today, where in the year 2020 about 69,000 cases were reported and 4,500 of these led to death. The deaths caused by this lung disease are increasing more and more now (2020-2022), considering that in 2019 there was a peak in contaminations of this disease, with 10 million people contracting it and unfortunately 1.2 million dying from it. But nowadays this disease can be treated better, where 85% of cases can be successfully treated. 
+              But nowadays this disease can be treated in a better way, where 85% of the cases can be successfully treated. Tuberculosis also has a treatment and an early diagnosis, but it continues to kill people all over the world, especially those with poor housing, malnutrition, poverty, and HIV. During treatment, in almost 100% of the cases, people are hospitalized. 
+
+A large part of the population thinks that these two diseases can no longer be infected and does not take proper care. It was possible to conclude the opposite, in view of the several cases and outbreaks that have already occurred. To avoid the repetition of these scenarios, one should not share personal objects, use objects, such as razors, only sterilized, use protection in sexual intercourse, and avoid large amounts of alcohol, especially people who already have liver problems. 
+              </p>
+        </div>
+
+    </div>
+<script>
+    var avisado = false;
+    if(avisado === false){
+        alert("Selecione uma lingua para começar, ela pode ser trocada a qualquer momento");
+        avisado = true;
+    }else{
+        console.log("Avisado");
+    }
+    const port = () => {
+        let pttxt = document.querySelector("#porttxt");
+        let ingtxt = document.querySelector("#ingtxt");
+
+        pttxt.style.display = "block";
+        ingtxt.style.display = "none";
+
+    };
+    const ing = () => {
+        let pttxt = document.querySelector("#porttxt");
+        let ingtxt = document.querySelector("#ingtxt");
+
+        pttxt.style.display = "none";
+        ingtxt.style.display = "block";
+
+    };
+
+</script>
+</body>
+
+</html>
